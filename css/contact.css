@@ -26,7 +26,6 @@ nav{
     line-height: 50px;
     padding-left: 40px;
 }
-
 ul{
     display: flex;
     float: right;
@@ -48,8 +47,7 @@ h2{
     text-align: center;
     margin-top: 5%;
 }
-footer {
-    margin-top:20px;
+footer { 
     background:#bdbdbd;
     padding:30px;
     text-align: center;
@@ -57,31 +55,35 @@ footer {
 }
 input[type=email]{
     width:90%;
-    height: 5vh;
+    height: 7vh;
 }
 input[type=submit]{
     width: 90%;
-    height:5vh;
-    background:#26c6da;
+    height:7vh;
+    background:#0995b8;
+    border-radius:20px;
 }
 input[type="number"]{
-    height: 5vh;
+    height: 7vh;
     width:45%;
 }
 input[type="name"]{
-    height: 5vh;
+    height: 7vh;
     width:45%;
 }
 iframe{
     padding: 0;
     margin: 0;
 }
-.container{
+.contain{
     margin-left:50%;
+    margin-bottom: 5%;
 }
-.contact{
-    text-align: center;
+.cotact{
+    position: absolute;
+    top:45%;
+    margin-left:18%;
 }
-.con{
-   margin-left:150px;
-} 
+iframe{
+    margin-bottom:5%;
+}

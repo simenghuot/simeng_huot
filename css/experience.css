@@ -48,29 +48,39 @@ h2{
     margin-top: 5%;
 }
 footer {
-    margin-top:220px;
+    margin-top:5%;
     background:#bdbdbd;
     padding:30px;
     text-align: center;
     color: rgb(31, 139, 172);
 }
 .btn{
-    background-color: blue;
+    background-color: #487e95;
     width: 140px;
     height: 5vh;
     border-radius: 5px;
-    margin-left: 85%;
+    margin-left:80%;
 }
-.experience{
-    margin-left:2%;
+.content-body{
+    width: 70%;
+    margin-left: 15%;
 }
-h3{
-   text-decoration: underline;
-   font-weight: bold;  
+.main-box{
+    display: flex;
+    margin-top: 15px;
 }
-.softskills{
-    margin-left:2%;
+.box{
+    width:20%;
+    height: 90px;
+    background-color:#16c79a;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
 }
-.hardskills{
-    margin-left:2%;
+.text{
+    width: 60%;
+    height: 90px;
+    background-color:#16c79a;
+    margin-left: 15px;
+    font-size: 20px;
 }
