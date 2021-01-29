@@ -7,20 +7,21 @@
 .site-header{
     width:100%;
     height: 400%;
-    background: linear-gradient(57deg,hsl(171, 100%, 39%),#1e4d92);
-    clip-path:polygon(0%,100% 0%, 100% 78%,0% 100%)
+    background: linear-gradient(57deg,hsla(101, 79%, 54%, 0.486),#16c7a1,#0e2344bd);
+    clip-path:polygon(0%,100% 0%, 100% 78%,0% 100%);
 }
 nav{
     width: 100%;
-    height: 100px;
+    height: 10vh;
     display: flex;
     color:white;
     justify-content: space-between;
     padding: 20px;
+    text-transform: uppercase;
 }
 .logo{
-    width: 50%;
-    height: 100px
+   display: flex;
+   align-items: center;
 }
 .logo h1{
     line-height: 50px;
@@ -30,22 +31,69 @@ ul{
     display: flex;
     float: right;
     margin-right: 50px;
-    margin-top: 20px;
+    align-items: center;
 }
 ul li{
     list-style: none;
+    padding: 10px;
 }
 ul li a{
     color: white;
     text-decoration: none;
-    padding: 10px;
 }
 ul li a:hover{
-    color:red;
+    color:blue;
 }
 h2{
     text-align: center;
+    margin: 4% 0;
+    font-size: 25px;
+}
+.cotact{
+    position: absolute;
+    margin-left:5%;
     margin-top: 5%;
+}
+input[type=email]{
+    width:100%;
+    height: 7vh;
+}
+input[type=submit]{
+    width: 20%;
+    height:7vh;
+    background:#517bd5;
+    border-radius:20px;
+    border: none;
+    margin-left: 72%;
+    color: #fff;
+}
+input[type=submit]:hover{
+    opacity: 0.7;
+}
+input[type="number"]{
+    height: 7vh;
+    width:47.7%;
+}
+input[type="name"]{
+    height: 7vh;
+    width:50%;
+}
+textarea{
+    width:100%; 
+    box-sizing: border-box;
+}
+.contain{
+    margin-left:50%;
+    margin-bottom: 5%;
+    font-size:50px;
+    font-family: sans-serif;
+    margin-right: 5%;
+}
+iframe{
+    margin-bottom:5%;
+    width:95% ;
+    height:30vh;
+    margin-left: 3%;
 }
 footer { 
     background:#bdbdbd;
@@ -53,37 +101,72 @@ footer {
     text-align: center;
     color: rgb(31, 139, 172);
 }
-input[type=email]{
-    width:90%;
-    height: 7vh;
+@media (max-width:700px){
+    h2{
+        text-transform: uppercase;
+    }
+    input[type=submit]{
+        width: 40%;
+        margin-left: 53%;
+        height: 6vh;
+        color: #fff;
+    }
+    input[type=name]{
+        width: 100%;
+    }
+    input[type=number]{
+        width: 100%;
+    }
+    .con p{
+        font-size:22px;
+    }
+    .con i{
+        font-size: 10px;
+    }   
 }
-input[type=submit]{
-    width: 90%;
-    height:7vh;
-    background:#0995b8;
-    border-radius:20px;
+@media (max-width:560px){
+    ul{
+        margin-left: 5%;
+    }
+    ul li{
+        padding: 5px; 
+    }
+    ul li a{
+        font-size: 11px;
+    }
+    h2{
+        display: none;
+    }
+    input[type=name]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type=number]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type=email]{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 6%;
+    }
+    textarea{
+        height: 7vh;
+    }
+    .contain{
+        width: 90%;
+        margin-left: 5%;
+        height: 50vh;
+    }
+    .con{
+        display: none;
+    }
+    }
+    .text-success{
+        width: 60%;
+        font-size: 13px;
+        margin-left:19%;
 }
-input[type="number"]{
-    height: 7vh;
-    width:45%;
-}
-input[type="name"]{
-    height: 7vh;
-    width:45%;
-}
-iframe{
-    padding: 0;
-    margin: 0;
-}
-.contain{
-    margin-left:50%;
-    margin-bottom: 5%;
-}
-.cotact{
-    position: absolute;
-    top:45%;
-    margin-left:18%;
-}
-iframe{
-    margin-bottom:5%;
+p{
+    font-size: 12px;
 }

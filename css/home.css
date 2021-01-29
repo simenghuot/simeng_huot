@@ -6,9 +6,19 @@
 }
 .site-header{
     width:100%;
-    height: 400%;
+    height: 120vh;
     background: linear-gradient(57deg,hsl(171, 100%, 39%),#1e4d92);
-    clip-path:polygon(0% 0%,100% 0%, 100% 78%,0% 100%)
+    clip-path:polygon(0% 0%,100% 0%, 100% 78%,0% 100%);
+}
+.image{
+    background-image: url(../images/8.jpeg);
+    background-size: cover;
+    background-image: no-repeat;
+    height: 62vh;
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 360px;
+    margin-top: 3%;
 }
 nav{
     width: 100%;
@@ -17,6 +27,7 @@ nav{
     color:white;
     justify-content: space-between;
     padding: 20px;
+    text-transform: uppercase;
 }
 .logo{
     width: 50%;
@@ -42,27 +53,19 @@ ul li a{
     padding: 10px;
 }
 ul li a:hover{
-    color:red;
+    color:blue;
 }
 section{
     display: flex;
-}
-.leftside{
-    width: 45%;
-    height: auto;
-    overflow:hidden;
-    margin-top:20px;
 }
 .leftside img{
     width: 600px;
     height:500px ;
 }
 .rightside{
-    width: 55%;
-    height: 300px;
     color:white;
     text-align: center;
-    margin-top:80px;
+    margin-top:13%;
     padding: 40px;
 }
 .rightside h1{
@@ -86,4 +89,15 @@ section{
 .rightside button:hover{
     background: linear-gradient(57deg,#1e4d92,#00c6a7);
 }
-
+.leftside{
+    display: flex;
+    margin-top: 0;
+}
+@media (max-width:600px){
+    nav{
+        width: 10%;
+    }
+    ul li a{
+        font-size: 5xp;
+    }
+}

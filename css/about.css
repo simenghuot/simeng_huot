@@ -7,7 +7,7 @@
 .site-header{
     width:100%;
     height: 400%;
-    background: linear-gradient(57deg,hsl(171, 100%, 39%),#1e4d92);
+    background: linear-gradient(57deg,hsla(101, 79%, 54%, 0.486),#16c7a1,#0e2344bd);
     clip-path:polygon(0%,100% 0%, 100% 78%,0% 100%)
 }
 nav{
@@ -17,6 +17,7 @@ nav{
     color:white;
     justify-content: space-between;
     padding: 20px;
+    text-transform: uppercase;
 }
 .logo{
     width: 50%;
@@ -37,45 +38,24 @@ ul li{
     list-style: none;
 }
 ul li a{
-    color: white;
+    color:white;
     text-decoration: none;
     padding: 10px;
 }
 ul li a:hover{
-    color:red;
+    color:blue;
 }
-h2{
+.body{
+    background-image: url('../images/7.jpeg');
+    background-size: cover;
+    background-position: center 30%;
+    height: 80vh;
     text-align: center;
-    margin-top:5%;
-}
-p{
     font-size:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 footer {
-    margin-top:0;
     background:#bdbdbd;
     padding:30px;
     text-align: center;
     color: rgb(31, 139, 172);
-}
-h3{
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left:6%;
-}
-#course-name{
-    font-weight: bold;
-}
-.information{
-    margin-left:8%;
-}
-.body{
-    margin-top: -100px;
-    background-image: url('../images/7.jpeg');
-    background-size: cover;
-    height: 70vh;
 }
